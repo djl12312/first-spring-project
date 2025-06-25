@@ -1,13 +1,11 @@
 package com.lion.hello;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest
-class HelloApplicationTests {
-
-	@Test
-	void contextLoads() {
+@SpringBootApplication
+public class HelloApplicationTests {
+	public static void main(String[] args) {
+		SpringApplication.run(HelloApplicationTests.class, args); // ★ 이걸 실행해야 서버가 뜹니다
 	}
-
 }
